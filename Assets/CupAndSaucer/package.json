@@ -1,0 +1,18 @@
+{
+    "author": {
+        "email": "mihal1073@outlook.com",
+        "name": "mihal1073",
+        "url": "https://ms0503.github.io"
+    },
+    "description": "A set of refillable mugcup and saucer",
+    "displayName": "Refillable Mugcup and Saucer",
+    "name": "ms.sora.cup-and-saucer",
+    "repo": "https://ms0503.github.io/vpm.json",
+    "unity": "2022.3",
+    "url": "https://github.com/ms0503/CupAndSaucer",
+    "version": "1.0.0",
+    "vpmDependencies": {
+        "com.vrchat.base": ">=3.6.1",
+        "com.vrchat.worlds": ">=3.6.1"
+    }
+}
