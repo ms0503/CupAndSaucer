@@ -400,14 +400,6 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1643352271020828989, guid: 69820a9a611a4e998b5863dda2905d95, type: 3}
-    - target: {fileID: 2530150289893440240, guid: 69820a9a611a4e998b5863dda2905d95, type: 3}
-      propertyPath: serializedProgramAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 9593f8106c62827cc80565414a6d9c3c, type: 2}
-    - target: {fileID: 3559756440586172248, guid: 69820a9a611a4e998b5863dda2905d95, type: 3}
-      propertyPath: serializedProgramAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 27683916f11d822ce8c76cee712b58c6, type: 2}
     - target: {fileID: 3585029252939746734, guid: 69820a9a611a4e998b5863dda2905d95, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -460,10 +452,6 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 8762609941437419436, guid: 69820a9a611a4e998b5863dda2905d95, type: 3}
-    - target: {fileID: 9106237167216310574, guid: 69820a9a611a4e998b5863dda2905d95, type: 3}
-      propertyPath: serializedProgramAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 878e91ced51a54033b36c784760f4e20, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "com.vrchat.base": {
+      "version": "3.6.1"
+    },
     "com.vrchat.worlds": {
       "version": "3.6.1"
     }
