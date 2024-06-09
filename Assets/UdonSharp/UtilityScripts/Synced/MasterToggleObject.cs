@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9bf33f09cee32b742633422574a691dba04b4bd7f2ce8528ecf78d252ffde1b0
-size 1395
+
+using UnityEngine;
+using VRC.SDKBase;
+
+namespace UdonSharp.Examples.Utilities
+{
+    /// <summary>
+    /// Allows the master and only the master to toggle a game object globally
+    /// </summary>
+    [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+    public class MasterToggleObject : UdonSharpBehaviour 
+    {
+        public GameObject toggleObject;
+
+        [UdonSynced]
+        bool isObjectEnabled;
+
+        private void Start()
+        {
+            isObjectEnabled = toggleObject.activeSelf;
+        }
+
+        // Prevents people who are not the master from taking ownership
+        public override bool OnOwnershipRequest(VRCPlayerApi requestingPlayer, VRCPlayerApi requestedOwner)
+        {
+            return requestedOwner.isMaster;
+        }
+
+        public override void OnDeserialization()
+        {
+            toggleObject.SetActive(isObjectEnabled);
+        }
+
+        public override void Interact()
+        {
+            if (!Networking.IsMaster)
+                return;
+            else if (!Networking.IsOwner(gameObject)) // The object may have transfer ownership on collision checked which would allow people to take ownership by accident
+                Networking.SetOwner(Networking.LocalPlayer, gameObject);
+
+            isObjectEnabled = !isObjectEnabled;
+            toggleObject.SetActive(isObjectEnabled);
+
+            RequestSerialization();
+        }
+    }
+}

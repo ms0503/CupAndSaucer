@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec9d036b69a7c4be4b132883d83dcfa9553fa9392388e7593ed332a623d38947
-size 430
+﻿.unity-box {
+    margin: 2px;
+    padding: 10px;
+    border-width: 0;
+    flex-shrink: 0;
+}
+
+
+#package-box {
+    margin: 2px;
+    border-width: 0;
+    flex-direction:row;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+#package-row {
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0);
+}
+
+#manifest-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
