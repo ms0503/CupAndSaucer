@@ -1,7 +1,6 @@
 [attr]lfs               filter=lfs diff=lfs merge=lfs -text
 [attr]unity-json        eol=lf linguist-language=json
 [attr]unity-yaml        merge=unityyamlmerge text linguist-language=yaml linguist-generated
-
 # Common.gitattributes
 *          text=auto
 *.bibtex   text diff=bibtex
@@ -194,6 +193,7 @@ Assets/Plugins/**       linguist-vendored
 *.reason                lfs
 *.rns                   lfs
 *.skel.bytes            lfs
+*.dylib                 lfs
 LightningData.asset     binary
 # git-vrc
 *.asset filter=vrc eol=lf text

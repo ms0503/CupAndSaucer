@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0e5cf81b491ffa44e27721e0dc6c09e43675b21fc4d13cc17024033f72f48c1
-size 349
+# デフォルトの無視対象ファイル
+/shelf/
+/workspace.xml
+# Rider の無視対象ファイル
+/modules.xml
+/.idea.CupAndSaucer.iml
+/projectSettingsUpdater.xml
+/contentModel.xml
+# エディターベースの HTTP クライアントリクエスト
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
