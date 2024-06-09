@@ -1,24 +1,3 @@
-﻿using UdonSharp;
-using UnityEngine;
-
-public class SaucerRefillTrigger : UdonSharpBehaviour {
-    public GameObject cup;
-
-    public bool CanRefill { get; private set; }
-
-    private void OnTriggerEnter(Collider other) {
-        if(this.IsTriggeredByMyCup(other)) {
-            this.CanRefill = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other) {
-        if(this.IsTriggeredByMyCup(other)) {
-            this.CanRefill = false;
-        }
-    }
-
-    private bool IsTriggeredByMyCup(Collider other) {
-        return this.cup == other.gameObject;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bbeaa404b85a3a06cd073fd3368d0cb6c5db540be88cbf3ef25a0c379758efe7
+size 574

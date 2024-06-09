@@ -1,30 +1,3 @@
-﻿using UdonSharp;
-using UnityEngine;
-
-public class Cup : UdonSharpBehaviour {
-    private Animator _anim;
-    private readonly int _drinkState = Animator.StringToHash("DrinkState");
-
-    [UdonSynced]
-    private int _state;
-
-    private void Start() {
-        this._anim = this.GetComponent<Animator>();
-    }
-
-    public override void OnPickupUseDown() {
-        this.UpdateState(this.GetNextState());
-    }
-
-    public void UpdateState(int state) {
-        this._state = state;
-        this._anim.SetInteger(this._drinkState, this._state);
-    }
-
-    private int GetNextState() {
-        if(this._state == 3) {
-            return 3;
-        }
-        return this._state + 1;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:906de9a16c0da3c1882e18a860d35b7987f74318996fb014c262bc6fdc8fd37d
+size 687

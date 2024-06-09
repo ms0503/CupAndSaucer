@@ -1,18 +1,3 @@
-{
-    "author": {
-        "email": "mihal1073@outlook.com",
-        "name": "mihal1073",
-        "url": "https://ms0503.github.io"
-    },
-    "description": "A set of refillable mugcup and saucer",
-    "displayName": "Refillable Mugcup and Saucer",
-    "name": "ms.sora.cup-and-saucer",
-    "repo": "https://ms0503.github.io/vpm.json",
-    "unity": "2022.3",
-    "url": "https://github.com/ms0503/CupAndSaucer",
-    "version": "1.0.1",
-    "vpmDependencies": {
-        "com.vrchat.base": ">=3.6.1",
-        "com.vrchat.worlds": ">=3.6.1"
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb54a2d689b70b1af460d64ae0f43116d8e852c63d8cf19646bfa6bab0eb5771
+size 546

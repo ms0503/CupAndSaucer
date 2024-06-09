@@ -1,22 +1,3 @@
-{
-  "dependencies": {
-    "com.vrchat.base": {
-      "version": "3.6.1"
-    },
-    "com.vrchat.worlds": {
-      "version": "3.6.1"
-    }
-  },
-  "locked": {
-    "com.vrchat.base": {
-      "version": "3.6.1",
-      "dependencies": {}
-    },
-    "com.vrchat.worlds": {
-      "version": "3.6.1",
-      "dependencies": {
-        "com.vrchat.base": "3.6.1"
-      }
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d6e42d9473ec59d31d783258b66d672064ae0985105503d3e8bb10866e82a704
+size 554
