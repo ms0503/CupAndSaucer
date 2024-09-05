@@ -1,0 +1,16 @@
+{
+	"name": "CupAndSaucer",
+	"rootNamespace": "CupAndSaucer",
+	"references": [
+		"UdonSharp.Runtime"
+	],
+	"includePlatforms": [],
+	"excludePlatforms": [],
+	"allowUnsafeCode": false,
+	"overrideReferences": false,
+	"precompiledReferences": [],
+	"autoReferenced": false,
+	"defineConstraints": [],
+	"versionDefines": [],
+	"noEngineReferences": false
+}
